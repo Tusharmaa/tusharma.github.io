@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.ele-space {
+  padding: 0 20px 0;
+}
+
+.hero{
+  background-image: url(city.jpeg);
+  height: 80vh;
+  animation: hero 10s linear infinite;
+  color: white;
+  filter: blur(0.2px);
+  z-index: -1;
+}
+
+@keyframes hero {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 10%;
+  }
+}
+
+.title-para1 {
+  text-align: center;
+  font-family: "Poppins";
+  margin-top: 150px;
+  font-size: 60px;
+  opacity: 0.9;
+  z-index: 1;
+
+
+}
+
+.title-para2 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Poppins";
+  font-size: 23px;
+  opacity: 1;
+}
+
+.about-para1a {
+  text-align: center;
+  font-size: 40px;
+  color: #10375c;
+  font-family: "Montserat";
+}
+
+.about-para1b {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 40px;
+  color: #10375c;
+  font-family: "Montserat";
+}
+
+#about {
+  padding: 3%;
+  background-color: #f4f4f4;
+
+}
+
+.about-para2 {
+  padding-left: 20%;
+  padding-bottom: 1%;
+  color: grey;
+  font-family: "Poppins";
+
+}
+
+.about-para3 {
+  color: grey;
+}
+
+.about-imgsize {
+  height: 150px;
+  width: 150px;
+  padding: 3%;
+  transition: transform 0.2s;
+  display: inline-block;
+ }
+.about-imgsize:hover {
+  transform: scale(1.5);
+}
+#features{
+	padding: 3%;
+}
+
+.features-image {
+  background-image: url(city-4.jpeg);
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  /* filter: blur(1.5px);
+  -webkit-filter: blur(1.5px) */
+}
+.features-opacity{
+  /* background-color: transparent; */
+  opacity: .8;
+  text-align: center;
+}
+.row-padding{
+  padding: 11%;
+}
+/* .card-padding{
+} */
+.remove-bullet{
+  list-style-type: none;
+  text-align: center;
+}
+.list-edit{
+  text-align: center;
+}
+
+#projects {
+ height: 90vh;
+ width: 100%;
+ padding: 3% 5%;
+}
+
+
+/*
+flip card
+*/
+.card-flip > div {
+  backface-visibility: hidden;
+  transition: transform 800ms;
+  transitioan-timing-function: linear;
+  width: 100%;
+  height: 265px;
+  margin: 0;
+  display: flex;
+}
+
+.btn{
+	text-align: center;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+h3{
+	text-align: center;
+}
+.para-align{
+	text-align: center;
+}
+.contact-align{
+  padding: 8%;
+  text-align: center;
+  top: 100px;
+}
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  background-color: #f4f4f4;
+}
